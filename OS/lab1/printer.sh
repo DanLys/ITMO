@@ -2,13 +2,10 @@
 
 result=""
 
-while [ true ]
+while [ "$reader" == "q" ]
 do
-    read reader
-    if [ "$reader" == "q" ]; then
-        break;
-    fi
     result+="$reader"
+    read reader
 done
 
 echo "$result"
