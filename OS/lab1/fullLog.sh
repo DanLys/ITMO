@@ -1,8 +1,8 @@
 #/bin/bash
 
 touch full.log
-dir=/var/log/system.log
+dir=logs.log
 
-res=$(sed 's/INFO/Information:/g; s/WARNING:/Warning:/g' $dir)
-grep -Ewo "Warning:" <<< $res > full.log
-grep -Ewo "Information:" <<< $res > full.log
+res=$(sed -e 's/INFO/Information:/g; s/WARNING:/Warning:/g' $dir)
+echo "$res" | grep " WARNING " >> full.log
+echo "$res" | grep " Information: " >> full.log

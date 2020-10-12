@@ -1,9 +1,11 @@
 #!bin/bash
-read x y z
 
-if [ "$x" -ge "$y" -a "$x" -ge "$z" ]; then
-    echo "$x"
-elif [ "$y" -ge "$x" -a "$y" -ge "$z" ]; then
-    echo "$y"
-else echo "$z"
+if [[ $2 -ge $1  && $2 -ge $3 ]]
+then
+    echo $2
+elif [[ $3 -ge $1 && $3 -ge $2 ]]
+    then
+        echo $3
+else
+    echo $1
 fi
