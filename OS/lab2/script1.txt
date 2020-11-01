@@ -1,5 +1,6 @@
-       4
+5
 PID CMD
-9454 -bash
-9717 bash
-9722 awk
+1912 bash
+2482 bash
+2488 ps
+2489 awk
