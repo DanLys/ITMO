@@ -1,6 +1,5 @@
 #!bin/bash
-touch script1.txt
 
-ps | wc -l >> script1.txt
-ps | awk -F ' ' '{ print $1 " " $4 }' >> script1.txt
-
+x="$(ps u $user --no-headers)"
+wc -l <<< $x
+awk ' { print $1 ":" $11 } ' <<< $x

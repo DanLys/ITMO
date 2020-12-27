@@ -3,4 +3,7 @@
 touch res.sh
 dir="test.sh"
 
-grep -E '^#!/bin/bash$|^[^#]' $dir > res.sh
+binBash=$(grep -o '#!/bin/bash$' $dir | cut -f 1)
+
+echo "$binBash" > res.sh
+grep -o '^[^#]*' $dir >> res.sh

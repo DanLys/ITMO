@@ -10,13 +10,13 @@ do
 	if [ -d "/proc/$PID" ]; then
 		tmp=$(sudo grep "read_bytes: " "/proc/$PID/io")
 		bytes=${tmp:12}
-		echo -n "$bytes " » hdata
-		echo "$i" » hdata
+		echo -n "$bytes " >> hdata
+		echo "$i" >> hdata
 	fi
 done < processes
 rm processes
 
-sleep 60s
+sleep 15s
 
 while read i; 
 do
@@ -26,8 +26,8 @@ do
 		tmp=$(sudo grep "read_bytes: " "/proc/$PID/io")
 		bytes=${tmp:12}
 		let diff="$bytes - $old_bytes"
-		echo -n "$diff" » hdata2
-		echo "$i" » hdata2
+		echo -n "$diff" >> hdata2
+		echo "$i" >> hdata2
 	fi
 done < hdata
 rm hdata

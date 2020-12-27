@@ -11,3 +11,29 @@
 713
 718
 2583
+root           1  0.0  0.6 167776  6680 ?        Ss   10:25   0:09 /sbin/init splash
+root         553  0.0  0.0   2540    32 ?        Ss   10:25   0:01 /usr/sbin/acpid
+root         561  0.0  0.0   9416   108 ?        Ss   10:25   0:00 /usr/sbin/cron -f
+root         564  0.0  0.3 412488  3656 ?        Ssl  10:25   0:06 /usr/sbin/NetworkManager --no-daemon
+syslog       590  0.0  0.0 224324   532 ?        Ssl  10:25   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         603  0.0  0.0  13664   104 ?        Ss   10:25   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root         653  0.0  0.0 313728   556 ?        Ssl  10:25   0:00 /usr/sbin/ModemManager --filter-policy=strict
+root         671  0.0  0.3 239596  3200 ?        Ssl  10:25   0:00 /usr/sbin/gdm3
+kernoops     713  0.0  0.0  11240    96 ?        Ss   10:25   0:00 /usr/sbin/kerneloops --test
+kernoops     718  0.0  0.0  11240   100 ?        Ss   10:25   0:00 /usr/sbin/kerneloops
+root       28608  0.0  0.1  28428  1804 ?        Ss   17:28   0:00 /usr/sbin/cupsd -l
+root       28610  0.0  0.1 180424  1596 ?        Ssl  17:28   0:00 /usr/sbin/cups-browsed
+danil      31237  0.0  0.0   9040   716 pts/1    S+   17:51   0:00 grep /sbin/
+root           1  0.3  0.8 168888  8160 ?        Ss   18:13   0:01 /sbin/init splash
+root         556  0.0  0.0   2540   540 ?        Ss   18:13   0:00 /usr/sbin/acpid
+root         562  0.0  0.2   9416  2108 ?        Ss   18:13   0:00 /usr/sbin/cron -f
+root         564  0.0  0.3  28560  3344 ?        Ss   18:13   0:00 /usr/sbin/cupsd -l
+root         566  0.1  0.9 338680  9352 ?        Ssl  18:13   0:00 /usr/sbin/NetworkManager --no-daemon
+syslog       592  0.0  0.2 224324  2276 ?        Ssl  18:13   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         605  0.0  0.1  13664  1276 ?        Ss   18:13   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root         639  0.0  0.6 180424  6240 ?        Ssl  18:13   0:00 /usr/sbin/cups-browsed
+root         653  0.0  0.5 313732  5864 ?        Ssl  18:13   0:00 /usr/sbin/ModemManager --filter-policy=strict
+root         671  0.0  0.6 239596  6232 ?        Ssl  18:13   0:00 /usr/sbin/gdm3
+kernoops     716  0.0  0.0  11240    88 ?        Ss   18:13   0:00 /usr/sbin/kerneloops --test
+kernoops     718  0.0  0.1  11240  1832 ?        Ss   18:13   0:00 /usr/sbin/kerneloops
+danil       2580  0.0  0.0   9040   660 pts/0    S+   18:19   0:00 grep /sbin/
